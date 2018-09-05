@@ -11,8 +11,8 @@ class Scoppa
       @brooms += 1
     end
 
-    def add_cards(cards)
-      @cards += cards
+    def add_card(card)
+      @cards << card
     end
 
     def score
