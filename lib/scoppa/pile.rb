@@ -1,7 +1,7 @@
 class Scoppa
   class Pile
     attr_reader :brooms, :cards
-    
+
     def initialize
       @brooms = 0
       @cards = []

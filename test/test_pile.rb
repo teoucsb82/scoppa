@@ -30,7 +30,7 @@ describe Scoppa::Pile do
     end
 
     it 'awards 1 point for most cards' do
-      21.times do 
+      21.times do
         @pile.add_card(Scoppa::Card.new('clubs', 2))
       end
       assert_equal(1, @pile.score)
@@ -92,7 +92,7 @@ describe Scoppa::Pile do
 
       it 'counts 4 points for cards, hearts, total 7s, 7 of hearts' do
         20.times do
-         @pile.add_card(Scoppa::Card.new('clubs', 1))
+          @pile.add_card(Scoppa::Card.new('clubs', 1))
         end
         @pile.add_card(Scoppa::Card.new('hearts', 1))
         @pile.add_card(Scoppa::Card.new('hearts', 2))

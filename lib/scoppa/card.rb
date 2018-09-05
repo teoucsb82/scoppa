@@ -8,7 +8,7 @@ class Scoppa
     end
 
     def to_s
-      val = 
+      val =
         case value
         when 1 then 'Ace'
         else value

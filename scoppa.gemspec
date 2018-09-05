@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
     'lib/scoppa/deck.rb',
     'lib/scoppa/hand.rb',
     'lib/scoppa/pile.rb',
-    'lib/scoppa/player.rb',
+    'lib/scoppa/player.rb'
   ]
   s.homepage    = 'https://rubygems.org/gems/scoppa'
   s.license     = 'MIT'

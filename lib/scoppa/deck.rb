@@ -10,7 +10,7 @@ class Scoppa
         end
       end
     end
-    
+
     def deal(number)
       @cards.shift(number)
     end
@@ -22,7 +22,7 @@ class Scoppa
     private
 
     def suits
-      %w(spades hearts diamonds clubs)
+      %w[spades hearts diamonds clubs]
     end
 
     def values
