@@ -6,8 +6,11 @@ Gem::Specification.new do |s|
   s.description = 'Ruby version of Scoppa (Italian Card Game)'
   s.authors     = ["Teo Dell'Amico"]
   s.email       = 'teo@dellamico.com'
-  s.files       = ["lib/scoppa.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/scoppa'
-  s.license       = 'MIT'
+  s.files       = [
+    'lib/scoppa.rb',
+    'lib/scoppa/card.rb',
+    'lib/scoppa/deck.rb',
+  ]
+  s.homepage    = 'https://rubygems.org/gems/scoppa'
+  s.license     = 'MIT'
 end
