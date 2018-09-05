@@ -6,8 +6,12 @@ class Scoppa
       @cards = []
     end
 
-    def add_cards(cards)
-      @cards += cards
+    def add_card(card)
+      @cards << card
+    end
+
+    def remove_card(card)
+      @cards.reject! { |c| c == card }
     end
   end
 end

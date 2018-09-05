@@ -6,18 +6,24 @@ describe Scoppa::Hand do
     @hand = Scoppa::Hand.new
   end
 
-  describe '#add_cards' do
-    it 'adds cards to the array' do
-      card_1 = Scoppa::Card.new('clubs', 4)
-      card_2 = Scoppa::Card.new('clubs', 5)
-      card_3 = Scoppa::Card.new('clubs', 6)
-      cards = [card_1, card_2, card_3]
+  describe '#add_card' do
+    it 'adds a card to the hand' do
+      card = Scoppa::Card.new('clubs', 2)
+      refute_includes(@hand.cards, card)
 
-      assert_equal(0, @hand.cards.length)
-      refute_equal(cards, @hand.cards)
-      @hand.add_cards(cards)
-      assert_equal(3, @hand.cards.length)
-      assert_equal(cards, @hand.cards)
+      @hand.add_card(card)
+      assert_includes(@hand.cards, card)
+    end
+  end
+
+  describe '#remove_card' do
+    it 'removes a card from the hand' do
+      card = Scoppa::Card.new('clubs', 2)
+      @hand.add_card(card)
+      assert_includes(@hand.cards, card)
+
+      @hand.remove_card(card)
+      refute_includes(@hand.cards, card)
     end
   end
 end
