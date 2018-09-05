@@ -6,5 +6,8 @@ class Scoppa
   end
 end
 
-require 'scoppa/deck'
 require 'scoppa/card'
+require 'scoppa/hand'
+require 'scoppa/deck'
+require 'scoppa/pile'
+require 'scoppa/player'

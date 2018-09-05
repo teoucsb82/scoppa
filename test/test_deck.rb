@@ -32,7 +32,7 @@ describe Scoppa::Deck do
 
     it 'removes those cards from the top of the deck' do
       assert_equal(40, @deck.cards.length)
-      deal = @deck.deal(5)
+      @deck.deal(5)
       assert_equal(35, @deck.cards.length)
     end
   end
